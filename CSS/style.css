@@ -152,7 +152,7 @@ output{
 
 .survey-container{
   box-shadow: 0 5px 25px -5px rgba(0,0,0, 0.4);
-  padding: 3rem 10rem 10rem 10rem;
+  padding: 3rem 10rem 3rem 10rem;
   border: 1px solid black;
   border-radius: 20px;
 }
