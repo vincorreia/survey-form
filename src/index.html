@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+    <main>
+      <div class="container survey-container">
+      <h1 id="title">freeCodeCamp Survey</h1>
+      <p id="description">This is a survey regarding your experience with the Free Code Camp HTML/CSS module</p>
+      <form id="survey-form">
+        <section id="personal-information" class="flex-row space-between">
+          
+        <div class="form-group personal-information-input-group">
+        <label id="name-label" for="name" class="form-label">Name</label>
+          
+        <input class="form-control personal-information-input" type="text" id="name" name="name" placeholder="Your Name" required>
+          
+        </div>
+          
+        <div class="form-group personal-information-input-group">
+          
+        <label id="email-label" for="email" class="form-label">Email</label>
+        <input class="form-control personal-information-input" type="email" id="email" name="email" placeholder="Your E-mail" required>
+        </div>
+        <div class="form-group">
+          <label for="dropdown" class="form-label">Please select the experience range that you have in the course area</label>
+          <select class="form-control rounded-border" name="experience" id="dropdown">
+            <option value="placeholder" disabled selected>Choose your experience frame</option>
+            <option value="0-1 year">I'm new to the subject - 0-1 Year</option>
+            <option value="2-4 years">I have some experience - 2-4 Years</option>
+            <option value="5 years +">I'm a veteran - 5 Years +</option>
+          </select>
+        </div>
+        </section>
+        
+        <section id="opinion" class="flex-row space-between">
+        <div class="form-group w-20 flex-row space-between">
+          <label id="number-label" for="number" class="form-label range-label">Rate the course</label><input onmousemove="changeText()" ontouchmove="changeText()" class="form-control range-control" type="range" id="number" name="number" min="1" max="5" required>
+          <p id="rating-text" class="w-100 center caption"></p>
+        </div>
+        <div class="form-group w-75">
+          <h1 class="form-label radio-label">How would you value the platform in general, regardless of your last course's content?</h1>
+       <div class="flex-row space-around radio-control-container">
+         <div>
+          <input class="radio-control" type="radio" name="platform-rating" value="terrible"><span class="radio-label">Terrible</span>
+         </div>
+         <div>
+          <input class="radio-control" type="radio" name="platform-rating" value="bad"><span class="radio-label">Bad</span>
+         </div>
+         <div>
+          <input class="radio-control" type="radio" name="platform-rating" value="basic"><span class="radio-label">Basic</span>
+         </div>
+         <div>
+          <input class="radio-control" type="radio" name="platform-rating" value="good"><span class="radio-label">Good</span>
+         </div>
+         <div>
+          <input class="radio-control" type="radio" name="platform-rating" value="excellent"><span class="radio-label">Excellent</span>
+         </div>
+          </div>
+        </div>
+        </section>
+        
+        <div class="form-group">
+          <h1 class="form-label">Please select the courses you have already completed on the platform.</h1>
+          <input class="checkbox-control" type="checkbox" value="responsive web design">Responsive web design<br/>
+          <input class="checkbox-control" type="checkbox" value="javascript algorithms and data structures">Javascript algorithms and data structures<br/>
+          <input class="checkbox-control" type="checkbox" value="front end development libraries">Front End development libraries<br/>
+          <input class="checkbox-control" type="checkbox" value="data visualization">Data visualization<br/>
+          <input class="checkbox-control" type="checkbox" value="back end development and APIs">Back End development and APIs<br/>
+          <input class="checkbox-control" type="checkbox" value="quality assurance">Quality assurance<br/>
+          <input class="checkbox-control" type="checkbox" value="scientific computing with python">Scientific computing with Python<br/>
+          <input class="checkbox-control" type="checkbox" value="data analysis with python">Data analysis with Python<br/>
+          <input class="checkbox-control" type="checkbox" value="information security">Information security<br/>
+          <input class="checkbox-control" type="checkbox" value="machine learning with python">Machine learning with Python<br/>
+        </div>
+        <div class="form-group">
+          <label for="comments" class="form-label">Any additional suggestions to improve the platform?</label><br/>
+          <textarea class="form-control higher rounded-border"></textarea>
+        </div>
+        <div class="w-100 flex-row">
+        <button type="submit" id="submit" class="btn">Submit</button>
+        </div>
+      </form>
+      </div>
+    </main>
+</html>
